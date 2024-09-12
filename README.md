@@ -38,7 +38,7 @@ This Terraform module provisions an AWS SNS (Simple Notification Service) topic.
 
 ```hcl
 module "sns_topic" {
-  source      = "./modules/sns-topic"
+  source      = "https://github.com/opstimus/terraform-aws-sns?ref=v<RELEASE>"
   project     = "my-project"
   environment = "production"
   name        = "alerts"
