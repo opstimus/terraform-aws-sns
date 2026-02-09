@@ -25,6 +25,7 @@ This Terraform module provisions an AWS SNS (Simple Notification Service) topic.
 | environment | Environment name        | `string` | -           |   yes    |
 | name        | Topic name              | `string` | -           |   yes    |
 | sns_type    | SNS topic type (fifo/standard) | `string` | "standard" |   no     |
+| tags        | tags                           | `map(string)` | -       |    no    |
 
 ## Outputs
 
@@ -43,5 +44,9 @@ module "sns_topic" {
   environment = "production"
   name        = "alerts"
   sns_type    = "fifo"
+  tags = {
+    Project = <project-name>
+    Environment = <environment-name>
+  }
 }
 ```
