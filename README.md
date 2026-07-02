@@ -1,3 +1,12 @@
+> ⚠️ **Moved to the monorepo.**
+> This module now lives in [`opstimus/terraform-modules`](https://github.com/opstimus/terraform-modules) at `modules/aws-sns`.
+>
+> ```hcl
+> source = "git::https://github.com/opstimus/terraform-modules.git//modules/aws-sns?ref=aws-sns/v2.0.0"
+> ```
+>
+> This repository remains for existing consumers; new development happens in the monorepo.
+
 # SNS Topic Module
 
 ## Description
